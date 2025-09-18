@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Axel Raoul - Piano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+
+    /* ========== Buttons ========== */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 22px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  transition: .25s;
+}
+
+.btn.cv {
+  background: #000;
+  color: #fff;
+}
+
+.btn.cv:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn.linked {
+  background: #fff;
+  color: #000;
+}
+
+.btn.linked:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+    :root{
+      --beige:#E4E4E4;
+      --text:#222;
+      --muted:#666;
+      --radius:16px;
+      --maxw:1100px;
+    }
+    body{
+      margin:0;
+      font-family: Inter, sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.6;
+    }
+    header.site-header{
+      position:sticky; top:0; z-index:1000;
+      background:var(--beige);
+      border-bottom:1px solid rgba(0,0,0,.06);
+    }
+    .nav{
+      max-width:var(--maxw); margin:0 auto;
+      display:flex; justify-content:space-between; align-items:center;
+      padding:14px 20px;
+    }
+    .brand{font-family:"Playfair Display",serif;font-size:1.6rem;font-weight:700}
+    .menu{display:flex;gap:24px;list-style:none;margin:0;padding:0;}
+    .menu a{text-decoration:none;font-weight:600;color:var(--text);opacity:.85;border-bottom:2px solid transparent;transition:.25s}
+    .menu a:hover{opacity:1;border-color:#000}
+
+    /* Section principale : bannière + texte */
+    .passion{
+      max-width:var(--maxw); margin:40px auto; padding:0 20px;
+    }
+    .passion-grid{
+      display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;
+    }
+    .passion img{
+      width:100%; border-radius:var(--radius);
+      box-shadow:0 6px 18px rgba(0,0,0,.12);
+    }
+    .passion h2{
+      font-size:1.8rem; font-family:"Playfair Display",serif; margin-bottom:15px;
+    }
+    .passion p{
+      font-size:0.95rem; text-align:justify;
+    }
+
+    /* Vidéo */
+    .video{max-width:800px;margin:40px auto;}
+    .video iframe{
+      width:100%; height:450px; border:none;
+      border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.1);
+    }
+
+    /* Galerie */
+    .gallery {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;            /* garde proportions réelles */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: block;
+}
+
+    .gallery img:hover{transform:scale(1.05)}
+
+    /* Footer */
+    footer{
+      background:var(--beige); margin-top:56px; padding:24px 20px;
+    }
+    .footer-inner{max-width:var(--maxw);margin:0 auto;text-align:center}
+    footer a{font-weight:600;text-decoration:none;color:var(--text)}
+    footer a:hover{text-decoration:underline}
+    .copy{margin-top:6px;color:var(--muted);font-size:.95rem}
+
+    /* Responsive */
+    @media(max-width:900px){
+      .passion-grid{grid-template-columns:1fr; gap:22px}
+      .video iframe{height:250px;}
+      .gallery img{width:100%; max-width:260px;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">Axel Raoul</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="piano.html">Piano passion</a></li>
+        <li><a href="computer_sciences.html">Computer sciences passion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section principale -->
+  <section class="passion">
+    <div class="passion-grid">
+      <img src="banner.jpg" alt="Axel Raoul performing on stage at the piano">
+      <div>
+        <h2>Piano</h2>
+        <p>
+          The piano has always been, for me, a way to express my emotions through music and to share them with others. But playing the piano also requires discipline, commitment, and determination: working for hours, for weeks on a single piece, practicing again and again until I succeed, sometimes on just one measure, <strong>and never giving up!</strong>
+        </p>
+        <p>
+            Taking part in competitions, with a heightened sense of rivalry, also means stepping out of my comfort zone and sometimes performing in front of hundreds of people.
+        </p>
+        <p>
+            For me, the piano represents a great challenge, an opportunity that allows me to grow not only technically and musically, but also on a personal level.
+        </p>
+        <div class="actions">
+  <a class="btn linked" href="https://youtu.be/9U0v4WZBY9s?si=_-jlXUl5PF_Hxcow&t=4764" target="_blank" rel="noopener">
+    See me playing in concert
+  </a>
+  <a class="btn cv" href="computer_sciences.html" rel="noopener">
+    My passion for computer science
+  </a>
+      </div>
+      
+    </div>
+  </section>
+  
+  
+
+   
+</div>
+
+
+
+
+ 
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <p>Contact me: <a href="mailto:axel.raoul@ecoles-idrac-bs.net">axel.raoul@ecoles-idrac-bs.net</a></p>
+      <p><a href="https://linkedin.com/in/axel-raoul" target="_blank">LinkedIn</a></p>
+      <p class="copy">© 2025 by Axel Raoul. Powered by Github Pages.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

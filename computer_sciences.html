@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Axel Raoul — Computer Sciences</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #1e1e1e;
+      --text-light: #dcdcdc;
+      --accent-blue: #569cd6;
+      --accent-green: #16db93;
+      --accent-purple: #c586c0;
+      --radius: 12px;
+      --maxw: 1000px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Fira Code", monospace;
+      background: #121212;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #000;
+      border-bottom: 1px solid #333;
+    }
+
+    .nav {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+    }
+
+    .brand {
+      font-family: "Playfair Display", serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+
+    .menu {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--text-light);
+      opacity: 0.8;
+      transition: 0.25s;
+    }
+
+    .menu a:hover {
+      opacity: 1;
+      color: var(--accent-blue);
+    }
+
+    /* Bloc principal */
+    .passion {
+      max-width: var(--maxw);
+      margin: 40px auto;
+      padding: 20px;
+      background: var(--bg-dark);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, .4);
+    }
+
+    .passion h2 {
+      font-size: 1.6rem;
+      color: var(--accent-purple);
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      color: var(--accent-green);
+      opacity: 0.8;
+      font-size: 1rem;
+    }
+
+    .passion p {
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+
+    .passion strong {
+      color: var(--accent-blue);
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      margin-top: 56px;
+      padding: 24px 20px;
+      color: #aaa;
+    }
+
+    .footer-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    footer a {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--accent-green);
+    }
+
+    footer a:hover {
+      color: var(--accent-blue);
+    }
+
+    .copy {
+      margin-top: 6px;
+      font-size: .9rem;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .passion {
+        padding: 15px;
+      }
+      .passion h2 {
+        font-size: 1.4rem;
+      }
+      .passion p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="brand">Axel Raoul</div>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="piano.html">Piano passion</a></li>
+        <li><a href="computer_sciences.html">Computer sciences passion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section principale -->
+  <section class="passion">
+    <h2><span class="tag">&lt;h2&gt;</span> Computer Sciences <span class="tag">&lt;/h2&gt;</span></h2>
+    <p>
+      Since my early age, I have been passionate about computer science. I have always liked exploring what is hidden behind systems. I started by installing and testing different operating systems, whether on my computer (notably Linux) or through virtual machines. I became interested in creating networks and domains, deploying applications thanks to Windows Server and Windows RemoteApp. I also enjoyed recreating domains, configuring sessions to imitate my middle school’s network. It was a way for me to learn through practice and experimentation.
+    </p>
+    <p>
+      I created Windows applications in C# and C++ thanks to YouTube tutorials. I am also interested in web development through HTML / CSS. I also created a chat application in PHP. For this project, I became interested in databases, especially to manage the tables for users and messages. I also experimented with installing a video CMS portal (similar to YouTube) on Linux 20, in order to host my own video sharing platform.
+    </p>
+    <p>
+      More recently, I have become interested in Python because it allows me to automate tasks and to explore fields that fascinate me such as AI, cybersecurity, and data analysis.
+    </p>
+    <p>
+      I love learning, I like tinkering, testing, and creating. I need a demanding and stimulating environment to progress. This is what today drives me to pursue engineering studies, particularly in computer science, since I have been interested in it from my early age.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <p>Contact me: <a href="mailto:axel.raoul@ecoles-idrac-bs.net">axel.raoul@ecoles-idrac-bs.net</a></p>
+      <p><a href="https://linkedin.com/in/axel-raoul" target="_blank">LinkedIn</a></p>
+      <p class="copy">© 2025 by Axel Raoul. Powered by Github Pages.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
